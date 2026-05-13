@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deekshitha Gajjala | Portfolio</title>
+    <meta
+      name="description"
+      content="Creative animated portfolio for Deekshitha Gajjala, focused on AI, automation, accessibility, leadership, and creative technology."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="dreamscape" aria-hidden="true"></canvas>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#intro" aria-label="Go to intro">DG</a>
+      <nav class="nav-links" aria-label="Portfolio navigation">
+        <a href="#projects">Projects</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/Gajjala_Deekshitha.pdf" target="_blank" rel="noreferrer">Resume</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero scene" id="intro">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Creative AI systems builder</p>
+          <h1>Deekshitha builds intelligent experiences.</h1>
+          <p class="hero-line" data-typewriter="AI, automation, accessibility, and leadership with a creative edge.">
+            AI, automation, accessibility, and leadership with a creative edge.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#projects">Explore Work</a>
+            <a class="ghost-action" href="#assistant">Command Terminal</a>
+            <a class="ghost-action" href="assets/Gajjala_Deekshitha.pdf" target="_blank" rel="noreferrer">View Resume</a>
+          </div>
+        </div>
+
+        <div class="avatar-stage reveal" aria-label="Portrait of Deekshitha Gajjala">
+          <div class="avatar-orbit orbit-one"></div>
+          <div class="avatar-orbit orbit-two"></div>
+          <div class="portrait-shell">
+            <img src="assets/deekshitha.png" alt="Portrait of Deekshitha Gajjala" />
+          </div>
+          <div class="scan-panel panel-a">AI Systems</div>
+          <div class="scan-panel panel-b">Leadership</div>
+          <div class="scan-panel panel-c">Creative Tech</div>
+        </div>
+      </section>
+
+      <section class="scene projects" id="projects">
+        <div class="section-heading compact reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Selected work</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card featured reveal" data-project="asl">
+            <div class="project-visual hand-visual" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i>
+              <span></span>
+            </div>
+            <p class="project-tag">Accessibility + AI</p>
+            <h3>ASL Gesture Detection</h3>
+            <p>Real-time hand gesture recognition focused on making communication more accessible.</p>
+            <button type="button">Read Details</button>
+          </article>
+          <article class="project-card reveal" data-project="mcp">
+            <div class="project-visual node-visual" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <p class="project-tag">AI Agents</p>
+            <h3>WhatsApp MCP Agent</h3>
+            <p>An experimental agent workflow for smarter communication, tool use, and automation.</p>
+            <button type="button">Read Details</button>
+          </article>
+          <article class="project-card reveal" data-project="weather">
+            <div class="project-visual weather-visual" aria-hidden="true">
+              <span></span>
+            </div>
+            <p class="project-tag">API + UI</p>
+            <h3>Weather App</h3>
+            <p>A live weather interface that turns API data into a clean and useful user experience.</p>
+            <button type="button">Read Details</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-details" id="projectDetails" aria-live="polite">
+        <button class="close-file" id="closeProject" type="button" aria-label="Close project details">x</button>
+        <p class="eyebrow" id="projectKicker">Project</p>
+        <h2 id="projectTitle">ASL Gesture Detection</h2>
+        <p id="projectSummary"></p>
+        <div class="file-grid">
+          <div>
+            <h3>Problem</h3>
+            <p id="projectProblem"></p>
+          </div>
+          <div>
+            <h3>Approach</h3>
+            <p id="projectSystem"></p>
+          </div>
+          <div>
+            <h3>Impact</h3>
+            <p id="projectImpact"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene control" id="leadership">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Leadership</p>
+          <h2>Planning, coordination, and execution.</h2>
+          <p>
+            Beyond code, this portfolio highlights Deekshitha's ability to organize people,
+            manage event flow, support sessions, and make technical communities feel active.
+          </p>
+        </div>
+        <div class="control-grid">
+          <div class="stat-panel reveal">
+            <strong>Sessions</strong>
+            <span data-count="12">0</span>
+            <p>Speaker sessions and learning experiences supported.</p>
+          </div>
+          <div class="stat-panel reveal">
+            <strong>Formats</strong>
+            <span data-count="4">0</span>
+            <p>Workshops, hackathons, idea events, and club activities.</p>
+          </div>
+          <div class="timeline reveal">
+            <div><b>SmartIDEAthon</b><small>Planning support, presentation flow, and coordination.</small></div>
+            <div><b>Workshops</b><small>Hands-on learning environments and logistics.</small></div>
+            <div><b>Hackathons</b><small>Fast collaboration, problem framing, and team energy.</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene skills" id="skills">
+        <div class="section-heading compact reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>Hover a skill to see how I use it.</h2>
+        </div>
+        <div class="constellation reveal" id="constellation">
+          <svg class="skill-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M15 24 L42 12 L70 25 L82 62 L48 82 L26 58 Z"></path>
+          </svg>
+          <button style="--x: 15%; --y: 24%" data-skill="AI systems that recognize, respond, and assist.">AI</button>
+          <button style="--x: 42%; --y: 12%" data-skill="Machine learning pipelines, detection logic, and model thinking.">ML</button>
+          <button style="--x: 70%; --y: 25%" data-skill="Python for prototypes, automation, APIs, and applied intelligence.">Python</button>
+          <button style="--x: 26%; --y: 58%" data-skill="LLM agents, MCP workflows, and autonomous tool use.">Agents</button>
+          <button style="--x: 55%; --y: 50%" data-skill="APIs that connect data, interfaces, and user value.">APIs</button>
+          <button style="--x: 82%; --y: 62%" data-skill="SQL and structured thinking for reliable data work.">SQL</button>
+          <button style="--x: 48%; --y: 82%" data-skill="Leadership, logistics, presentation, and team coordination.">Leadership</button>
+          <p class="skill-tooltip" id="skillTooltip">Move across a skill to read the signal.</p>
+        </div>
+      </section>
+
+      <section class="scene terminal-section" id="assistant">
+        <div class="terminal-window reveal">
+          <div class="terminal-top">
+            <span></span><span></span><span></span>
+            <p>deekshitha.profile</p>
+          </div>
+          <div class="terminal-output" id="terminalOutput">
+            <p>&gt; Profile loaded.</p>
+            <p>&gt; Try: skills, projects, leadership, contact</p>
+          </div>
+          <label class="terminal-input">
+            <span>&gt;</span>
+            <input id="terminalInput" autocomplete="off" spellcheck="false" placeholder="type a command" />
+          </label>
+        </div>
+        <aside class="assistant-card reveal">
+          <p class="eyebrow">Profile Guide</p>
+          <h2>Explore the mix of AI work, accessibility, and leadership.</h2>
+          <p>
+            Start with ASL Gesture Detection for impact, then view the agent project for automation and experimentation.
+          </p>
+        </aside>
+      </section>
+
+      <section class="scene certifications" id="certifications">
+        <div class="section-heading compact reveal">
+          <p class="eyebrow">Certifications</p>
+          <h2>Learning that supports the work.</h2>
+        </div>
+        <div class="cert-grid">
+          <article class="cert-card reveal">
+            <span>Salesforce</span>
+            <h3>Sales Force Agent Specialist Certification</h3>
+            <p>Focused on agent-assisted workflows, customer intelligence, and platform-based automation.</p>
+          </article>
+          <article class="cert-card reveal">
+            <span>Coursera</span>
+            <h3>Python 3 Programming Specialization</h3>
+            <p>University of Michigan specialization covering Python programming foundations and applied problem solving.</p>
+          </article>
+          <article class="cert-card reveal">
+            <span>GITAM University</span>
+            <h3>Mastering Advanced Generative AI Models</h3>
+            <p>Six-day workshop on modern generative AI concepts, model behavior, and practical experimentation.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="scene contact-scene" id="contact">
+        <div class="analysis-card reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Creative: High<br />AI Engineering: Active<br />Leadership: Verified</h2>
+          <p>
+            A portfolio designed to feel immersive and animated while staying readable,
+            clean, and connected to real work.
+          </p>
+          <div class="contact-links" aria-label="Contact links">
+            <a href="mailto:dgajjala576@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/deekshitha-gajjala-658530292/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="#" aria-label="GitHub link placeholder">GitHub</a>
+            <a href="tel:+917396413329">+91-7396413329</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
